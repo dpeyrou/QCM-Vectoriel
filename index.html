@@ -236,25 +236,268 @@
             { type: "colonnes", enonce: "\\vec{z}_2 \\wedge \\vec{y}_3", solution: {signe: "-", trigo: "cos", angle: "β", vecteur: "x", indice: "2"}, description: "Niveau B (2/4) : Base 2 et 3" },
             { type: "colonnes", enonce: "\\vec{z}_3 \\wedge \\vec{y}_2", solution: {signe: "-", trigo: "cos", angle: "β", vecteur: "x", indice: "2"}, description: "Niveau B (2/4) : Base 3 et 2" }
         ],
-        "C": [
-            { type: "qcm", enonce: "\\vec{y}_3 \\wedge \\vec{z}_1", propositions: ["+\\cos(\\beta)\\vec{x}_1 - \\sin(\\beta)\\sin(\\theta)\\vec{y}_1", "+\\cos(\\beta)\\vec{x}_1 + \\sin(\\beta)\\cos(\\theta)\\vec{y}_1", "-\\cos(\\beta)\\vec{x}_1 - \\sin(\\beta)\\sin(\\theta)\\vec{y}_1", "+\\sin(\\beta)\\vec{x}_1"], correct: ["+\\cos(\\beta)\\vec{x}_1 - \\sin(\\beta)\\sin(\\theta)\\vec{y}_1"], description: "Niveau C (3/4) : Fig 3 vers Fig 1" },
-			
-            { type: "qcm", enonce: "\\vec{z}_3 \\wedge \\vec{z}_1", propositions: ["+\\sin(\\beta)\\vec{x}_1 - \\sin(\\beta)\\sin(\\theta)\\vec{y}_1", "-\\sin(\\beta)\\vec{x}_1 - \\sin(\\theta)\\cos(\\beta)\\vec{y}_1", "-\\cos(\\beta)\\vec{x}_1 - \\sin(\\beta)\\sin(\\theta)\\vec{y}_1", "+\\sin(\\beta)\\vec{x}_1"], correct: ["-\\sin(\\beta)\\vec{x}_1 - \\sin(\\theta)\\cos(\\beta)\\vec{y}_1"], description: "Niveau C (3/4) : Fig 3 vers Fig 1" },
-            { type: "qcm", enonce: "\\vec{z}_1 \\wedge \\vec{y}_3", propositions: ["-\\cos(\\beta)\\vec{x}_1 + \\sin(\\beta)\\sin(\\theta)\\vec{y}_1", "-\\cos(\\beta)\\vec{x}_1 - \\sin(\\beta)\\cos(\\theta)\\vec{y}_1", "+\\cos(\\beta)\\vec{x}_1 + \\sin(\\beta)\\sin(\\theta)\\vec{y}_1", "-\\sin(\\beta)\\vec{x}_1"], correct: ["-\\cos(\\beta)\\vec{x}_1 + \\sin(\\beta)\\sin(\\theta)\\vec{y}_1"], description: "Niveau C (3/4) : Fig 1 vers Fig 3" },
-            { type: "qcm", enonce: "\\vec{z}_1 \\wedge \\vec{z}_3", propositions: ["-\\sin(\\beta)\\vec{x}_1 + \\sin(\\beta)\\sin(\\theta)\\vec{y}_1", "+\\sin(\\beta)\\vec{x}_1 + \\sin(\\theta)\\cos(\\beta)\\vec{y}_1", "+\\cos(\\beta)\\vec{x}_1 + \\sin(\\beta)\\sin(\\theta)\\vec{y}_1", "-\\sin(\\beta)\\vec{x}_1"], correct: ["+\\sin(\\beta)\\vec{x}_1 + \\sin(\\theta)\\cos(\\beta)\\vec{y}_1"], description: "Niveau C (3/4) : Fig 1 vers Fig 3" },
-            { type: "qcm", enonce: "\\vec{y}_3 \\wedge \\vec{x}_1", propositions: ["+\\sin(\\beta)\\cos(\\theta)\\vec{y}_1 - \\cos(\\beta)\\vec{z}_1", "-\\sin(\\beta)\\sin(\\theta)\\vec{x}_1 + \\cos(\\beta)\\vec{z}_1", "+\\cos(\\beta)\\cos(\\theta)\\vec{y}_1 - \\sin(\\beta)\\vec{z}_1", "+\\sin(\\beta)\\vec{y}_1"], correct: ["+\\sin(\\beta)\\cos(\\theta)\\vec{y}_1 - \\cos(\\beta)\\vec{z}_1"], description: "Niveau C (3/4) : Fig 3 vers Fig 1" },
-            { type: "qcm", enonce: "\\vec{z}_3 \\wedge \\vec{x}_1", propositions: ["+\\sin(\\beta)\\vec{x}_1 - \\sin(\\beta)\\sin(\\theta)\\vec{y}_1", "+\\cos(\\theta)\\cos(\\beta)\\vec{y}_1 + \\sin(\\beta)\\vec{z}_1", "-\\cos(\\beta)\\cos(\\theta)\\vec{y}_2 - \\cos(\\beta)\\vec{z}_2", "+\\cos(\\beta)\\vec{x}_2"], correct: ["+\\cos(\\theta)\\cos(\\beta)\\vec{y}_1 + \\sin(\\beta)\\vec{z}_1"], description: "Niveau C (3/4) : Fig 3 vers Fig 1" },
-            { type: "qcm", enonce: "\\vec{x}_1 \\wedge \\vec{y}_3", propositions: ["-\\sin(\\beta)\\cos(\\theta)\\vec{y}_1 + \\cos(\\beta)\\vec{z}_1", "-\\cos(\\beta)\\vec{y}_1 + \\sin(\\beta)\\cos(\\theta)\\vec{y}_2", "+\\sin(\\beta)\\sin(\\theta)\\vec{y}_1 + \\cos(\\beta)\\vec{z}_1", "+\\cos(\\beta)\\vec{z}_1"], correct: ["-\\sin(\\beta)\\cos(\\theta)\\vec{y}_1 + \\cos(\\beta)\\vec{z}_1"], description: "Niveau C (3/4) : Fig 1 vers Fig 3" },
-            { type: "qcm", enonce: "\\vec{x}_1 \\wedge \\vec{z}_3", propositions: ["-\\sin(\\beta)\\vec{x}_1 + \\sin(\\beta)\\sin(\\theta)\\vec{y}_1", "-\\cos(\\theta)\\cos(\\beta)\\vec{y}_1 - \\sin(\\beta)\\vec{z}_1", "+\\cos(\\beta)\\cos(\\theta)\\vec{y}_2 + \\cos(\\beta)\\vec{z}_2", "-\\cos(\\beta)\\vec{x}_2"], correct: ["-\\cos(\\theta)\\cos(\\beta)\\vec{y}_1 - \\sin(\\beta)\\vec{z}_1"], description: "Niveau C (3/4) : Fig 1 vers Fig 3" },
-            { type: "qcm", enonce: "\\vec{z}_2 \\wedge \\vec{x}_0", propositions: ["+\\cos(\\theta)\\sin(\\alpha)\\vec{x}_1 + \\cos(\\theta)\\cos(\\alpha)\\vec{y}_1 - \\sin(\\theta)\\sin(\\alpha)\\vec{z}_1", "+\\cos(\\theta)\\vec{y}_0 - \\sin(\\theta)\\sin(\\alpha)\\vec{z}_0", "+\\cos(\\theta)\\vec{y}_1 - \\sin(\\theta)\\sin(\\alpha)\\vec{z}_1", "+\\cos(\\theta)\\sin(\\alpha)\\vec{z}_1"], correct: ["+\\cos(\\theta)\\sin(\\alpha)\\vec{x}_1 + \\cos(\\theta)\\cos(\\alpha)\\vec{y}_1 - \\sin(\\theta)\\sin(\\alpha)\\vec{z}_1", "+\\cos(\\theta)\\vec{y}_0 - \\sin(\\theta)\\sin(\\alpha)\\vec{z}_0"], description: "Niveau C (3/4) : Fig 2 vers Fig 0" },
-            { type: "qcm", enonce: "\\vec{x}_0 \\wedge \\vec{z}_2", propositions: ["-\\cos(\\theta)\\sin(\\alpha)\\vec{x}_1 - \\cos(\\theta)\\cos(\\alpha)\\vec{y}_1 + \\sin(\\theta)\\sin(\\alpha)\\vec{z}_1", "-\\cos(\\theta)\\vec{y}_0 + \\sin(\\theta)\\sin(\\alpha)\\vec{z}_0", "-\\cos(\\theta)\\vec{y}_1 + \\sin(\\theta)\\sin(\\alpha)\\vec{z}_1", "-\\cos(\\theta)\\sin(\\alpha)\\vec{z}_1"], correct: ["-\\cos(\\theta)\\sin(\\alpha)\\vec{x}_1 - \\cos(\\theta)\\cos(\\alpha)\\vec{y}_1 + \\sin(\\theta)\\sin(\\alpha)\\vec{z}_1", "-\\cos(\\theta)\\vec{y}_0 + \\sin(\\theta)\\sin(\\alpha)\\vec{z}_0"], description: "Niveau C (3/4) : Fig 0 vers Fig 2" },
-            { type: "qcm", enonce: "\\vec{z}_2 \\wedge \\vec{y}_0", propositions: ["-\\cos(\\theta)\\cos(\\alpha)\\vec{x}_1 + \\cos(\\theta)\\sin(\\alpha)\\vec{y}_1 + \\sin(\\theta)\\cos(\\alpha)\\vec{z}_1", "-\\cos(\\theta)\\vec{x}_0 + \\sin(\\theta)\\cos(\\alpha)\\vec{z}_0", "-\\cos(\\theta)\\vec{x}_1 + \\sin(\\theta)\\cos(\\alpha)\\vec{z}_1", "+\\sin(\\theta)\\cos(\\alpha)\\vec{z}_1"], correct: ["-\\cos(\\theta)\\cos(\\alpha)\\vec{x}_1 + \\cos(\\theta)\\sin(\\alpha)\\vec{y}_1 + \\sin(\\theta)\\cos(\\alpha)\\vec{z}_1", "-\\cos(\\theta)\\vec{x}_0 + \\sin(\\theta)\\cos(\\alpha)\\vec{z}_0"], description: "Niveau C (3/4) : Fig 2 vers Fig 0" },
-            { type: "qcm", enonce: "\\vec{y}_0 \\wedge \\vec{z}_2", propositions: ["+\\cos(\\theta)\\cos(\\alpha)\\vec{x}_1 - \\cos(\\theta)\\sin(\\alpha)\\vec{y}_1 - \\sin(\\theta)\\cos(\\alpha)\\vec{z}_1", "+\\cos(\\theta)\\vec{x}_0 - \\sin(\\theta)\\cos(\\alpha)\\vec{z}_0", "+\\cos(\\theta)\\vec{x}_1 - \\sin(\\theta)\\cos(\\alpha)\\vec{z}_1", "-\\sin(\\theta)\\cos(\\alpha)\\vec{z}_1"], correct: ["+\\cos(\\theta)\\cos(\\alpha)\\vec{x}_1 - \\cos(\\theta)\\sin(\\alpha)\\vec{y}_1 - \\sin(\\theta)\\cos(\\alpha)\\vec{z}_1", "+\\cos(\\theta)\\vec{x}_0 - \\sin(\\theta)\\cos(\\alpha)\\vec{z}_0"], description: "Niveau C (3/4) : Fig 0 vers Fig 2" },
-            { type: "qcm", enonce: "\\vec{x}_2 \\wedge \\vec{x}_0", propositions: ["-\\sin(\\theta)\\sin(\\alpha)\\vec{x}_1 - \\sin(\\theta)\\cos(\\alpha)\\vec{y}_1 - \\cos(\\theta)\\sin(\\alpha)\\vec{z}_1", "-\\sin(\\theta)\\vec{y}_0 - \\cos(\\theta)\\sin(\\alpha)\\vec{z}_0", "+\\sin(\\theta)\\vec{y}_1 + \\cos(\\theta)\\sin(\\alpha)\\vec{z}_1", "+\\sin(\\theta)\\sin(\\alpha)\\vec{x}_1 - \\sin(\\theta)\\cos(\\alpha)\\vec{y}_1 - \\cos(\\theta)\\sin(\\alpha)\\vec{z}_1"], correct: ["-\\sin(\\theta)\\sin(\\alpha)\\vec{x}_1 - \\sin(\\theta)\\cos(\\alpha)\\vec{y}_1 - \\cos(\\theta)\\sin(\\alpha)\\vec{z}_1", "-\\sin(\\theta)\\vec{y}_0 - \\cos(\\theta)\\sin(\\alpha)\\vec{z}_0"], description: "Niveau C (3/4) : Fig 2 vers Fig 0" },
-            { type: "qcm", enonce: "\\vec{x}_0 \\wedge \\vec{x}_2", propositions: ["+\\sin(\\theta)\\sin(\\alpha)\\vec{x}_1 + \\sin(\\theta)\\cos(\\alpha)\\vec{y}_1 + \\cos(\\theta)\\sin(\\alpha)\\vec{z}_1", "+\\sin(\\theta)\\vec{y}_0 + \\cos(\\theta)\\sin(\\alpha)\\vec{z}_0", "-\\sin(\\theta)\\vec{y}_1 - \\cos(\\theta)\\sin(\\alpha)\\vec{z}_1", "-\\sin(\\theta)\\sin(\\alpha)\\vec{x}_1 + \\sin(\\theta)\\cos(\\alpha)\\vec{y}_1 + \\cos(\\theta)\\sin(\\alpha)\\vec{z}_1"], correct: ["+\\sin(\\theta)\\sin(\\alpha)\\vec{x}_1 + \\sin(\\theta)\\cos(\\alpha)\\vec{y}_1 + \\cos(\\theta)\\sin(\\alpha)\\vec{z}_1", "+\\sin(\\theta)\\vec{y}_0 + \\cos(\\theta)\\sin(\\alpha)\\vec{z}_0"], description: "Niveau C (3/4) : Fig 0 vers Fig 2" },
-            { type: "qcm", enonce: "\\vec{x}_2 \\wedge \\vec{y}_0", propositions: ["+\\sin(\\theta)\\cos(\\alpha)\\vec{x}_1 - \\sin(\\theta)\\sin(\\alpha)\\vec{y}_1 + \\cos(\\theta)\\cos(\\alpha)\\vec{z}_1", "+\\sin(\\theta)\\vec{x}_0 + \\cos(\\theta)\\cos(\\alpha)\\vec{z}_0", "-\\sin(\\theta)\\vec{x}_0 + \\cos(\\theta)\\cos(\\alpha)\\vec{z}_0", "-\\cos(\\theta)\\cos(\\alpha)\\vec{z}_0"], correct: ["+\\sin(\\theta)\\cos(\\alpha)\\vec{x}_1 - \\sin(\\theta)\\sin(\\alpha)\\vec{y}_1 + \\cos(\\theta)\\cos(\\alpha)\\vec{z}_1", "+\\sin(\\theta)\\vec{x}_0 + \\cos(\\theta)\\cos(\\alpha)\\vec{z}_0"], description: "Niveau C (3/4) : Fig 2 vers Fig 0" },
-            { type: "qcm", enonce: "\\vec{y}_0 \\wedge \\vec{x}_2", propositions: ["-\\sin(\\theta)\\cos(\\alpha)\\vec{x}_1 + \\sin(\\theta)\\sin(\\alpha)\\vec{y}_1 - \\cos(\\theta)\\cos(\\alpha)\\vec{z}_1", "-\\sin(\\theta)\\vec{x}_0 - \\cos(\\theta)\\cos(\\alpha)\\vec{z}_0", "+\\sin(\\theta)\\vec{x}_0 - \\cos(\\theta)\\cos(\\alpha)\\vec{z}_0", "+\\cos(\\theta)\\cos(\\alpha)\\vec{z}_0"], correct: ["-\\sin(\\theta)\\cos(\\alpha)\\vec{x}_1 + \\sin(\\theta)\\sin(\\alpha)\\vec{y}_1 - \\cos(\\theta)\\cos(\\alpha)\\vec{z}_1", "-\\sin(\\theta)\\vec{x}_0 - \\cos(\\theta)\\cos(\\alpha)\\vec{z}_0"], description: "Niveau C (3/4) : Fig 0 vers Fig 2" }
-        ],
+		// Banques Niv C 2 figures 
+		
+		"C": [
+			{
+				"type": "qcm",
+				"enonce": "{\\vec{y}}_{3}\\wedge {\\vec{z}}_{1}",
+				"propositions": [
+					"+\\cos{\\left(\\beta \\right)}{\\vec{x}}_{1}-\\sin{\\left(\\beta \\right)}\\sin{\\left(\\theta \\right)}{\\vec{y}}_{1}",
+					"+\\cos{\\left(\\theta \\right)}\\cos{\\left(\\beta \\right)}{\\vec{x}}_{2}-\\sin{\\left(\\theta \\right)}\\sin{\\left(\\beta \\right)}{\\vec{y}}_{2}+\\sin{\\left(\\theta \\right)}\\cos{\\left(\\beta \\right)}{\\vec{z}}_{2}",
+					"+\\cos{\\left(\\beta \\right)}{\\vec{x}}_{1}+\\sin{\\left(\\beta \\right)}\\cos{\\left(\\theta \\right)}{\\vec{y}}_{1}",
+					"-\\cos{\\left(\\beta \\right)}{\\vec{x}}_{1}-\\sin{\\left(\\beta \\right)}\\sin{\\left(\\theta \\right)}{\\vec{y}}_{1}",
+					"+\\sin{\\left(\\beta \\right)}{\\vec{x}}_{1}"
+				],
+				"correct": [
+					"+\\cos{\\left(\\beta \\right)}{\\vec{x}}_{1}-\\sin{\\left(\\beta \\right)}\\sin{\\left(\\theta \\right)}{\\vec{y}}_{1}",
+					"+\\cos{\\left(\\theta \\right)}\\cos{\\left(\\beta \\right)}{\\vec{x}}_{2}-\\sin{\\left(\\theta \\right)}\\sin{\\left(\\beta \\right)}{\\vec{y}}_{2}+\\sin{\\left(\\theta \\right)}\\cos{\\left(\\beta \\right)}{\\vec{z}}_{2}"
+				],
+				"description": "Niveau C (3/4) : Fig 3 vers Fig 1"
+			},
+			{
+				"type": "qcm",
+				"enonce": "{\\vec{z}}_{3}\\wedge {\\vec{z}}_{1}",
+				"propositions": [
+					"-\\sin{\\left(\\beta \\right)}{\\vec{x}}_{1}-\\sin{\\left(\\theta \\right)}\\cos{\\left(\\beta \\right)}{\\vec{y}}_{1}",
+					"-\\cos{(\\theta )}\\sin{(\\beta )}{\\vec{x}}_{3}-\\sin{\\left(\\theta \\right)}{\\vec{y}}_{3}",
+					"+\\sin{\\left(\\beta \\right)}{\\vec{x}}_{1}-\\sin{\\left(\\beta \\right)}\\sin{\\left(\\theta \\right)}{\\vec{y}}_{1}",
+					"-\\cos{\\left(\\beta \\right)}{\\vec{x}}_{1}-\\sin{\\left(\\beta \\right)}\\sin{\\left(\\theta \\right)}{\\vec{y}}_{1}",
+					"+\\sin{\\left(\\beta \\right)}{\\vec{x}}_{1}"
+				],
+				"correct": [
+					"-\\sin{\\left(\\beta \\right)}{\\vec{x}}_{1}-\\sin{\\left(\\theta \\right)}\\cos{\\left(\\beta \\right)}{\\vec{y}}_{1}",
+					"-\\cos{(\\theta )}\\sin{(\\beta )}{\\vec{x}}_{3}-\\sin{\\left(\\theta \\right)}{\\vec{y}}_{3}"
+				],
+				"description": "Niveau C (3/4) : Fig 3 vers Fig 1"
+			},
+			{
+				"type": "qcm",
+				"enonce": "{\\vec{z}}_{1}\\wedge {\\vec{y}}_{3}",
+				"propositions": [
+					"-\\cos{\\left(\\beta \\right)}{\\vec{x}}_{1}+\\sin{\\left(\\beta \\right)}\\sin{\\left(\\theta \\right)}{\\vec{y}}_{1}",
+					"-\\cos{\\left(\\theta \\right)}\\cos{\\left(\\beta \\right)}{\\vec{x}}_{2}+\\sin{\\left(\\theta \\right)}\\sin{\\left(\\beta \\right)}{\\vec{y}}_{2}-\\sin{\\left(\\theta \\right)}\\cos{\\left(\\beta \\right)}{\\vec{z}}_{2}",
+					"-\\cos{\\left(\\beta \\right)}{\\vec{x}}_{1}-\\sin{\\left(\\beta \\right)}\\cos{\\left(\\theta \\right)}{\\vec{y}}_{1}",
+					"+\\cos{\\left(\\beta \\right)}{\\vec{x}}_{1}+\\sin{\\left(\\beta \\right)}\\sin{\\left(\\theta \\right)}{\\vec{y}}_{1}",
+					"-\\sin{\\left(\\beta \\right)}{\\vec{x}}_{1}"
+				],
+				"correct": [
+					"-\\cos{\\left(\\beta \\right)}{\\vec{x}}_{1}+\\sin{\\left(\\beta \\right)}\\sin{\\left(\\theta \\right)}{\\vec{y}}_{1}",
+					"-\\cos{\\left(\\theta \\right)}\\cos{\\left(\\beta \\right)}{\\vec{x}}_{2}+\\sin{\\left(\\theta \\right)}\\sin{\\left(\\beta \\right)}{\\vec{y}}_{2}-\\sin{\\left(\\theta \\right)}\\cos{\\left(\\beta \\right)}{\\vec{z}}_{2}"
+				],
+				"description": "Niveau C (3/4) : Fig 1 vers Fig 3"
+			},
+			{
+				"type": "qcm",
+				"enonce": "{\\vec{z}}_{1}\\wedge {\\vec{z}}_{3}",
+				"propositions": [
+					"+\\sin{\\left(\\beta \\right)}{\\vec{x}}_{1}+\\sin{\\left(\\theta \\right)}\\cos{\\left(\\beta \\right)}{\\vec{y}}_{1}",
+					"+\\cos{\\theta }\\sin{\\beta }{\\vec{x}}_{3}+\\sin{\\left(\\theta \\right)}{\\vec{y}}_{3}",
+					"-\\sin{\\left(\\beta \\right)}{\\vec{x}}_{1}+\\sin{\\left(\\beta \\right)}\\sin{\\left(\\theta \\right)}{\\vec{y}}_{1}",
+					"+\\cos{\\left(\\beta \\right)}{\\vec{x}}_{1}+\\sin{\\left(\\beta \\right)}\\sin{\\left(\\theta \\right)}{\\vec{y}}_{1}",
+					"-\\sin{\\left(\\beta \\right)}{\\vec{x}}_{1}"
+				],
+				"correct": [
+					"+\\sin{\\left(\\beta \\right)}{\\vec{x}}_{1}+\\sin{\\left(\\theta \\right)}\\cos{\\left(\\beta \\right)}{\\vec{y}}_{1}",
+					"+\\cos{\\theta }\\sin{\\beta }{\\vec{x}}_{3}+\\sin{\\left(\\theta \\right)}{\\vec{y}}_{3}"
+				],
+				"description": "Niveau C (3/4) : Fig 1 vers Fig 3"
+			},
+			{
+				"type": "qcm",
+				"enonce": "{\\vec{y}}_{3}\\wedge {\\vec{x}}_{1}",
+				"propositions": [
+					"+\\sin{\\left(\\beta \\right)}\\cos{\\left(\\theta \\right)}{\\vec{y}}_{1}-\\cos{\\left(\\beta \\right)}{\\vec{z}}_{1}",
+					"+\\cos{\\left(\\beta \\right)}\\sin{\\left(\\theta \\right)}{\\vec{y}}_{2}+\\cos{\\left(\\theta \\right)}\\sin{\\left(\\beta \\right)}{\\vec{x}}_{2}-\\cos{\\left(\\beta \\right)}\\cos{\\left(\\theta \\right)}{\\vec{z}}_{2}",
+					"-\\sin{\\left(\\beta \\right)}\\sin{\\left(\\theta \\right)}{\\vec{x}}_{1}+\\cos{\\left(\\beta \\right)}{\\vec{z}}_{1}",
+					"+\\cos{\\left(\\beta \\right)}\\cos{\\left(\\theta \\right)}{\\vec{y}}_{1}-\\sin{\\left(\\beta \\right)}{\\vec{z}}_{1}",
+					"+\\sin{\\left(\\beta \\right)}{\\vec{y}}_{1}"
+				],
+				"correct": [
+					"+\\sin{\\left(\\beta \\right)}\\cos{\\left(\\theta \\right)}{\\vec{y}}_{1}-\\cos{\\left(\\beta \\right)}{\\vec{z}}_{1}",
+					"+\\cos{\\left(\\beta \\right)}\\sin{\\left(\\theta \\right)}{\\vec{y}}_{2}+\\cos{\\left(\\theta \\right)}\\sin{\\left(\\beta \\right)}{\\vec{x}}_{2}-\\cos{\\left(\\beta \\right)}\\cos{\\left(\\theta \\right)}{\\vec{z}}_{2}"
+				],
+				"description": "Niveau C (3/4) : Fig 3 vers Fig 1"
+			},
+			{
+				"type": "qcm",
+				"enonce": "{\\vec{z}}_{3}\\wedge {\\vec{x}}_{1}",
+				"propositions": [
+					"+\\cos{\\left(\\theta \\right)}\\cos{\\left(\\beta \\right)}{\\vec{y}}_{1}+\\sin{\\left(\\beta \\right)}{\\vec{z}}_{1}",
+					"-\\sin{\\theta }\\sin{\\beta }{\\vec{x}}_{3}+\\cos{\\theta }{\\vec{y}}_{3}",
+					"+\\sin{\\left(\\beta \\right)}{\\vec{x}}_{1}-\\sin{\\left(\\beta \\right)}\\sin{\\left(\\theta \\right)}{\\vec{y}}_{1}",
+					"-\\cos{\\left(\\beta \\right)}\\cos{\\left(\\theta \\right)}{\\vec{y}}_{2}-\\cos{\\left(\\beta \\right)}{\\vec{z}}_{2}",
+					"+\\cos{\\left(\\beta \\right)}{\\vec{x}}_{2}"
+				],
+				"correct": [
+					"+\\cos{\\left(\\theta \\right)}\\cos{\\left(\\beta \\right)}{\\vec{y}}_{1}+\\sin{\\left(\\beta \\right)}{\\vec{z}}_{1}",
+					"-\\sin{\\theta }\\sin{\\beta }{\\vec{x}}_{3}+\\cos{\\theta }{\\vec{y}}_{3}"
+				],
+				"description": "Niveau C (3/4) : Fig 3 vers Fig 1"
+			},
+			{
+				"type": "qcm",
+				"enonce": "{\\vec{x}}_{1}\\wedge {\\vec{y}}_{3}",
+				"propositions": [
+					"-\\sin{\\left(\\beta \\right)}\\cos{\\left(\\theta \\right)}{\\vec{y}}_{1}+\\cos{\\left(\\beta \\right)}{\\vec{z}}_{1}",
+					"-\\cos{\\left(\\beta \\right)}\\sin{\\left(\\theta \\right)}{\\vec{y}}_{2}-\\cos{\\left(\\theta \\right)}\\sin{\\left(\\beta \\right)}{\\vec{x}}_{2}+\\cos{\\left(\\beta \\right)}\\cos{\\left(\\theta \\right)}{\\vec{z}}_{2}",
+					"-\\cos{\\left(\\beta \\right)}{\\vec{y}}_{1}+\\sin{\\left(\\beta \\right)}\\cos{\\left(\\theta \\right)}{\\vec{y}}_{2}",
+					"+\\sin{\\left(\\beta \\right)}\\sin{\\left(\\theta \\right)}{\\vec{y}}_{1}+\\cos{\\left(\\beta \\right)}{\\vec{z}}_{1}",
+					"+\\cos{\\left(\\beta \\right)}{\\vec{z}}_{1}"
+				],
+				"correct": [
+					"-\\sin{\\left(\\beta \\right)}\\cos{\\left(\\theta \\right)}{\\vec{y}}_{1}+\\cos{\\left(\\beta \\right)}{\\vec{z}}_{1}",
+					"-\\cos{\\left(\\beta \\right)}\\sin{\\left(\\theta \\right)}{\\vec{y}}_{2}-\\cos{\\left(\\theta \\right)}\\sin{\\left(\\beta \\right)}{\\vec{x}}_{2}+\\cos{\\left(\\beta \\right)}\\cos{\\left(\\theta \\right)}{\\vec{z}}_{2}"
+				],
+				"description": "Niveau C (3/4) : Fig 1 vers Fig 3"
+			},
+			{
+				"type": "qcm",
+				"enonce": "{\\vec{x}}_{1}\\wedge {\\vec{z}}_{3}",
+				"propositions": [
+					"-\\cos{\\left(\\theta \\right)}\\cos{\\left(\\beta \\right)}{\\vec{y}}_{1}-\\sin{\\left(\\beta \\right)}{\\vec{z}}_{1}",
+					"+\\sin{\\theta }\\sin{\\beta }{\\vec{x}}_{3}-\\cos{\\theta }{\\vec{y}}_{3}",
+					"-\\sin{\\left(\\beta \\right)}{\\vec{x}}_{1}+\\sin{\\left(\\beta \\right)}\\sin{\\left(\\theta \\right)}{\\vec{y}}_{1}",
+					"+\\cos{\\left(\\beta \\right)}\\cos{\\left(\\theta \\right)}{\\vec{y}}_{2}+\\cos{\\left(\\beta \\right)}{\\vec{z}}_{2}",
+					"-\\cos{\\left(\\beta \\right)}{\\vec{x}}_{2}"
+				],
+				"correct": [
+					"-\\cos{\\left(\\theta \\right)}\\cos{\\left(\\beta \\right)}{\\vec{y}}_{1}-\\sin{\\left(\\beta \\right)}{\\vec{z}}_{1}",
+					"+\\sin{\\theta }\\sin{\\beta }{\\vec{x}}_{3}-\\cos{\\theta }{\\vec{y}}_{3}"
+				],
+				"description": "Niveau C (3/4) : Fig 1 vers Fig 3"
+			},
+			{
+				"type": "qcm",
+				"enonce": "{\\vec{z}}_{2}\\wedge {\\vec{x}}_{0}",
+				"propositions": [
+					"+\\sin{\\left(\\alpha \\right)}{\\vec{x}}_{2}+\\cos{\\left(\\theta \\right)}\\cos{\\left(\\alpha \\right)}{\\vec{y}}_{2}",
+					"+\\cos{\\left(\\theta \\right)}{\\vec{y}}_{0}-\\sin{\\left(\\theta \\right)}\\sin{\\left(\\alpha \\right)}{\\vec{z}}_{0}",
+					"+\\cos{\\left(\\theta \\right)}{\\vec{y}}_{1}-\\sin{\\left(\\theta \\right)}\\sin{\\left(\\alpha \\right)}{\\vec{z}}_{1}",
+					"+\\sin{\\left(\\alpha \\right)}{\\vec{x}}_{1}+\\cos{\\left(\\theta \\right)}\\sin{\\left(\\alpha \\right)}{\\vec{y}}_{1}+\\sin{\\left(\\theta \\right)}\\cos{\\left(\\alpha \\right)}{\\vec{z}}_{1}",
+					"-\\cos{\\left(\\theta \\right)}\\sin{\\left(\\alpha \\right)}{\\vec{x}}_{1}+\\sin{\\left(\\theta \\right)}{\\vec{z}}_{0}"
+				],
+				"correct": [
+					"+\\sin{\\left(\\alpha \\right)}{\\vec{x}}_{2}+\\cos{\\left(\\theta \\right)}\\cos{\\left(\\alpha \\right)}{\\vec{y}}_{2}",
+					"+\\cos{\\left(\\theta \\right)}{\\vec{y}}_{0}-\\sin{\\left(\\theta \\right)}\\sin{\\left(\\alpha \\right)}{\\vec{z}}_{0}"
+				],
+				"description": "Niveau C (3/4) : Fig 2 vers Fig 0"
+			},
+			{
+				"type": "qcm",
+				"enonce": "{\\vec{x}}_{0}\\wedge {\\vec{z}}_{2}",
+				"propositions": [
+					"-\\sin{\\left(\\alpha \\right)}{\\vec{x}}_{2}-\\cos{\\left(\\theta \\right)}\\cos{\\left(\\alpha \\right)}{\\vec{y}}_{2}",
+					"-\\cos{\\left(\\theta \\right)}{\\vec{y}}_{0}+\\sin{\\left(\\theta \\right)}\\sin{\\left(\\alpha \\right)}{\\vec{z}}_{0}",
+					"-\\cos{\\left(\\theta \\right)}{\\vec{y}}_{1}+\\sin{\\left(\\theta \\right)}\\sin{\\left(\\alpha \\right)}{\\vec{z}}_{1}",
+					"+\\sin{\\left(\\alpha \\right)}{\\vec{x}}_{1}+\\cos{\\left(\\theta \\right)}\\sin{\\left(\\alpha \\right)}{\\vec{y}}_{1}+\\sin{\\left(\\theta \\right)}\\cos{\\left(\\alpha \\right)}{\\vec{z}}_{1}",
+					"+\\cos{\\left(\\theta \\right)}\\sin{\\left(\\alpha \\right)}{\\vec{x}}_{1}-\\sin{\\left(\\theta \\right)}{\\vec{z}}_{0}"
+				],
+				"correct": [
+					"-\\sin{\\left(\\alpha \\right)}{\\vec{x}}_{2}-\\cos{\\left(\\theta \\right)}\\cos{\\left(\\alpha \\right)}{\\vec{y}}_{2}",
+					"-\\cos{\\left(\\theta \\right)}{\\vec{y}}_{0}+\\sin{\\left(\\theta \\right)}\\sin{\\left(\\alpha \\right)}{\\vec{z}}_{0}"
+				],
+				"description": "Niveau C (3/4) : Fig 0 vers Fig 2"
+			},
+			{
+				"type": "qcm",
+				"enonce": "{\\vec{z}}_{2}\\wedge {\\vec{y}}_{0}",
+				"propositions": [
+					"-\\cos{\\left(\\alpha \\right)}{\\vec{x}}_{2}+\\cos{\\left(\\theta \\right)}\\sin{\\left(\\alpha \\right)}{\\vec{y}}_{2}",
+					"-\\cos{\\left(\\theta \\right)}{\\vec{x}}_{0}+\\sin{\\left(\\theta \\right)}\\cos{\\left(\\alpha \\right)}{\\vec{z}}_{0}",
+					"-\\cos{\\left(\\theta \\right)}{\\vec{x}}_{1}+\\sin{\\left(\\theta \\right)}\\cos{\\left(\\alpha \\right)}{\\vec{z}}_{1}",
+					"+\\sin{\\left(\\theta \\right)}\\cos{\\left(\\alpha \\right)}{\\vec{z}}_{1}",
+					"+\\cos{\\left(\\theta \\right)}\\cos{\\left(\\alpha \\right)}{\\vec{x}}_{1}-\\sin{\\left(\\theta \\right)}{\\vec{x}}_{0}"
+				],
+				"correct": [
+					"-\\cos{\\left(\\alpha \\right)}{\\vec{x}}_{2}+\\cos{\\left(\\theta \\right)}\\sin{\\left(\\alpha \\right)}{\\vec{y}}_{2}",
+					"-\\cos{\\left(\\theta \\right)}{\\vec{x}}_{0}+\\sin{\\left(\\theta \\right)}\\cos{\\left(\\alpha \\right)}{\\vec{z}}_{0}"
+				],
+				"description": "Niveau C (3/4) : Fig 2 vers Fig 0"
+			},
+			{
+				"type": "qcm",
+				"enonce": "{\\vec{y}}_{0}\\wedge {\\vec{z}}_{2}",
+				"propositions": [
+					"+\\cos{\\left(\\alpha \\right)}{\\vec{x}}_{2}-\\cos{\\left(\\theta \\right)}\\sin{\\left(\\alpha \\right)}{\\vec{y}}_{2}",
+					"+\\cos{\\left(\\theta \\right)}{\\vec{x}}_{0}-\\sin{\\left(\\theta \\right)}\\cos{\\left(\\alpha \\right)}{\\vec{z}}_{0}",
+					"+\\cos{\\left(\\theta \\right)}{\\vec{x}}_{1}-\\sin{\\left(\\theta \\right)}\\cos{\\left(\\alpha \\right)}{\\vec{z}}_{1}",
+					"-\\sin{\\left(\\theta \\right)}\\cos{\\left(\\alpha \\right)}{\\vec{z}}_{1}",
+					"-\\cos{\\left(\\theta \\right)}\\cos{\\left(\\alpha \\right)}{\\vec{x}}_{1}+\\sin{\\left(\\theta \\right)}{\\vec{x}}_{0}"
+				],
+				"correct": [
+					"+\\cos{\\left(\\alpha \\right)}{\\vec{x}}_{2}-\\cos{\\left(\\theta \\right)}\\sin{\\left(\\alpha \\right)}{\\vec{y}}_{2}",
+					"+\\cos{\\left(\\theta \\right)}{\\vec{x}}_{0}-\\sin{\\left(\\theta \\right)}\\cos{\\left(\\alpha \\right)}{\\vec{z}}_{0}"
+				],
+				"description": "Niveau C (3/4) : Fig 0 vers Fig 2"
+			},
+			{
+				"type": "qcm",
+				"enonce": "{\\vec{x}}_{2}\\wedge {\\vec{x}}_{0}",
+				"propositions": [
+					"-\\sin{\\left(\\theta \\right)}\\sin{\\left(\\alpha \\right)}{\\vec{x}}_{1}-\\sin{\\left(\\theta \\right)}\\cos{\\left(\\alpha \\right)}{\\vec{y}}_{1}-\\cos{\\left(\\theta \\right)}\\sin{\\left(\\alpha \\right)}{\\vec{z}}_{1}",
+					"-\\sin{\\left(\\theta \\right)}{\\vec{y}}_{0}-\\cos{\\left(\\theta \\right)}\\sin{\\left(\\alpha \\right)}{\\vec{z}}_{0}",
+					"+\\sin{\\left(\\theta \\right)}{\\vec{y}}_{1}+\\cos{\\left(\\theta \\right)}\\sin{\\left(\\alpha \\right)}{\\vec{z}}_{1}",
+					"+\\sin{\\left(\\theta \\right)}\\sin{\\left(\\alpha \\right)}{\\vec{x}}_{1}-\\sin{\\left(\\theta \\right)}\\cos{\\left(\\alpha \\right)}{\\vec{y}}_{1}-\\cos{\\left(\\theta \\right)}\\sin{\\left(\\alpha \\right)}{\\vec{z}}_{1}",
+					"-\\sin{\\left(\\theta \\right)}\\cos{\\left(\\alpha \\right)}{\\vec{x}}_{1}+\\cos{\\left(\\theta \\right)}{\\vec{y}}_{0}"
+				],
+				"correct": [
+					"-\\sin{\\left(\\theta \\right)}\\sin{\\left(\\alpha \\right)}{\\vec{x}}_{1}-\\sin{\\left(\\theta \\right)}\\cos{\\left(\\alpha \\right)}{\\vec{y}}_{1}-\\cos{\\left(\\theta \\right)}\\sin{\\left(\\alpha \\right)}{\\vec{z}}_{1}",
+					"-\\sin{\\left(\\theta \\right)}{\\vec{y}}_{0}-\\cos{\\left(\\theta \\right)}\\sin{\\left(\\alpha \\right)}{\\vec{z}}_{0}"
+				],
+				"description": "Niveau C (3/4) : Fig 2 vers Fig 0"
+			},
+			{
+				"type": "qcm",
+				"enonce": "{\\vec{x}}_{0}\\wedge {\\vec{x}}_{2}",
+				"propositions": [
+					"+\\sin{\\left(\\theta \\right)}\\sin{\\left(\\alpha \\right)}{\\vec{x}}_{1}+\\sin{\\left(\\theta \\right)}\\cos{\\left(\\alpha \\right)}{\\vec{y}}_{1}+\\cos{\\left(\\theta \\right)}\\sin{\\left(\\alpha \\right)}{\\vec{z}}_{1}",
+					"+\\sin{\\left(\\theta \\right)}{\\vec{y}}_{0}+\\cos{\\left(\\theta \\right)}\\sin{\\left(\\alpha \\right)}{\\vec{z}}_{0}",
+					"-\\sin{\\left(\\theta \\right)}{\\vec{y}}_{1}-\\cos{\\left(\\theta \\right)}\\sin{\\left(\\alpha \\right)}{\\vec{z}}_{1}",
+					"-\\sin{\\left(\\theta \\right)}\\sin{\\left(\\alpha \\right)}{\\vec{x}}_{1}+\\sin{\\left(\\theta \\right)}\\cos{\\left(\\alpha \\right)}{\\vec{y}}_{1}+\\cos{\\left(\\theta \\right)}\\sin{\\left(\\alpha \\right)}{\\vec{z}}_{1}",
+					"+\\sin{\\left(\\theta \\right)}\\cos{\\left(\\alpha \\right)}{\\vec{x}}_{1}-\\cos{\\left(\\theta \\right)}{\\vec{y}}_{0}"
+				],
+				"correct": [
+					"+\\sin{\\left(\\theta \\right)}\\sin{\\left(\\alpha \\right)}{\\vec{x}}_{1}+\\sin{\\left(\\theta \\right)}\\cos{\\left(\\alpha \\right)}{\\vec{y}}_{1}+\\cos{\\left(\\theta \\right)}\\sin{\\left(\\alpha \\right)}{\\vec{z}}_{1}",
+					"+\\sin{\\left(\\theta \\right)}{\\vec{y}}_{0}+\\cos{\\left(\\theta \\right)}\\sin{\\left(\\alpha \\right)}{\\vec{z}}_{0}"
+				],
+				"description": "Niveau C (3/4) : Fig 0 vers Fig 2"
+			},
+			{
+				"type": "qcm",
+				"enonce": "{\\vec{x}}_{2}\\wedge {\\vec{y}}_{0}",
+				"propositions": [
+					"-\\sin{(\\alpha )}\\cos{(\\theta )}{\\vec{\\mathrm{y}}}_{2}+\\cos{\\left(\\alpha \\right)}{\\vec{z}}_{2}",
+					"+\\sin{\\left(\\theta \\right)}{\\vec{x}}_{0}+\\cos{\\left(\\theta \\right)}\\cos{\\left(\\alpha \\right)}{\\vec{z}}_{0}",
+					"-\\sin{\\left(\\theta \\right)}{\\vec{x}}_{0}+\\cos{\\left(\\theta \\right)}\\cos{\\left(\\alpha \\right)}{\\vec{z}}_{0}",
+					"-\\cos{\\left(\\theta \\right)}\\cos{\\left(\\alpha \\right)}{\\vec{z}}_{0}",
+					"-\\sin{\\left(\\theta \\right)}\\cos{\\left(\\alpha \\right)}{\\vec{x}}_{1}+\\sin{\\left(\\theta \\right)}{\\vec{y}}_{1}"
+				],
+				"correct": [
+					"-\\sin{(\\alpha )}\\cos{(\\theta )}{\\vec{\\mathrm{y}}}_{2}+\\cos{\\left(\\alpha \\right)}{\\vec{z}}_{2}",
+					"+\\sin{\\left(\\theta \\right)}{\\vec{x}}_{0}+\\cos{\\left(\\theta \\right)}\\cos{\\left(\\alpha \\right)}{\\vec{z}}_{0}"
+				],
+				"description": "Niveau C (3/4) : Fig 2 vers Fig 0"
+			},
+			{
+				"type": "qcm",
+				"enonce": "{\\vec{y}}_{0}\\wedge {\\vec{x}}_{2}",
+				"propositions": [
+					"+\\sin{(\\alpha )}\\cos{(\\theta )}{\\vec{\\mathrm{y}}}_{2}-\\cos{\\left(\\alpha \\right)}{\\vec{z}}_{2}",
+					"-\\sin{\\left(\\theta \\right)}{\\vec{x}}_{0}-\\cos{\\left(\\theta \\right)}\\cos{\\left(\\alpha \\right)}{\\vec{z}}_{0}",
+					"-\\sin{(\\theta )}\\cos{(\\alpha )}{\\vec{x}}_{0}-\\cos{\\left(\\theta \\right)}\\cos{\\left(\\alpha \\right)}{\\vec{z}}_{0}",
+					"+\\cos{\\left(\\theta \\right)}\\cos{\\left(\\alpha \\right)}{\\vec{z}}_{0}",
+					"+\\sin{\\left(\\theta \\right)}\\cos{\\left(\\alpha \\right)}{\\vec{x}}_{1}-\\sin{\\left(\\theta \\right)}{\\vec{y}}_{1}"
+				],
+				"correct": [
+					"+\\sin{(\\alpha )}\\cos{(\\theta )}{\\vec{\\mathrm{y}}}_{2}-\\cos{\\left(\\alpha \\right)}{\\vec{z}}_{2}",
+					"-\\sin{\\left(\\theta \\right)}{\\vec{x}}_{0}-\\cos{\\left(\\theta \\right)}\\cos{\\left(\\alpha \\right)}{\\vec{z}}_{0}"
+				],
+				"description": "Niveau C (3/4) : Fig 0 vers Fig 2"
+			}
+		],
+		
+       // Attention erreur D correspond à deux figures mais de 1 vers 3 normalement il faudra le remplacer par "E" à terme !
         "D": [
             { type: "qcm", enonce: "\\vec{y}_3 \\wedge \\vec{x}_1", propositions: ["-\\cos(\\beta)\\vec{z}_1 + \\sin(\\beta)\\cos(\\theta)\\vec{y}_1", "+\\cos(\\beta)\\vec{z}_1 - \\sin(\\beta)\\sin(\\theta)\\vec{x}_1", "-\\sin(\\beta)\\vec{z}_1 + \\cos(\\beta)\\cos(\\theta)\\vec{y}_1", "+\\sin(\\beta)\\vec{y}_1"], correct: ["-\\cos(\\beta)\\vec{z}_1 + \\sin(\\beta)\\cos(\\theta)\\vec{y}_1"], description: "Niveau D (4/4) : Produit complexe (Fig 3 / Fig 1)" },
             { type: "qcm", enonce: "\\vec{x}_1 \\wedge \\vec{y}_3", propositions: ["+\\cos(\\beta)\\vec{z}_1 - \\sin(\\beta)\\cos(\\theta)\\vec{y}_1", "-\\cos(\\beta)\\vec{z}_1 + \\sin(\\beta)\\sin(\\theta)\\vec{x}_1", "+\\sin(\\beta)\\vec{z}_1 - \\cos(\\beta)\\cos(\\theta)\\vec{y}_1", "-\\sin(\\beta)\\vec{y}_1"], correct: ["+\\cos(\\beta)\\vec{z}_1 - \\sin(\\beta)\\cos(\\theta)\\vec{y}_1"], description: "Niveau D (4/4) : Produit complexe (Fig 1 / Fig 3)" },
@@ -264,7 +507,139 @@
             { type: "qcm", enonce: "\\vec{x}_1 \\wedge \\vec{z}_3", propositions: ["-\\cos(\\beta)\\cos(\\theta)\\vec{y}_1 - \\sin(\\beta)\\vec{z}_1", "+\\cos(\\beta)\\cos(\\theta)\\vec{y}_1 + \\sin(\\beta)\\vec{z}_1", "-\\sin(\\beta)\\cos(\\theta)\\vec{y}_1 - \\cos(\\beta)\\vec{z}_1", "-\\sin(\\beta)\\vec{z}_1"], correct: ["-\\cos(\\beta)\\cos(\\theta)\\vec{y}_1 - \\sin(\\beta)\\vec{z}_1"], description: "Niveau D (4/4) : Produit complexe (Fig 1 / Fig 3)" },
             { type: "qcm", enonce: "\\vec{z}_3 \\wedge \\vec{y}_1", propositions: ["-\\cos(\\beta)\\cos(\\theta)\\vec{x}_1 + \\cos(\\beta)\\sin(\\theta)\\vec{z}_1", "+\\cos(\\beta)\\cos(\\theta)\\vec{x}_1 - \\cos(\\beta)\\sin(\\theta)\\vec{z}_1", "-\\sin(\\beta)\\cos(\\theta)\\vec{x}_1 + \\cos(\\beta)\\sin(\\theta)\\vec{z}_1", "-\\cos(\\beta)\\vec{x}_2"], correct: ["-\\cos(\\beta)\\cos(\\theta)\\vec{x}_1 + \\cos(\\beta)\\sin(\\theta)\\vec{z}_1", "-\\cos(\\beta)\\vec{x}_2"], description: "Niveau D (4/4) : Produit complexe (Fig 3 / Fig 1)" },
             { type: "qcm", enonce: "\\vec{y}_1 \\wedge \\vec{z}_3", propositions: ["+\\cos(\\beta)\\cos(\\theta)\\vec{x}_1 - \\cos(\\beta)\\sin(\\theta)\\vec{z}_1", "-\\cos(\\beta)\\cos(\\theta)\\vec{x}_1 + \\cos(\\beta)\\sin(\\theta)\\vec{z}_1", "+\\sin(\\beta)\\cos(\\theta)\\vec{x}_1 - \\cos(\\beta)\\sin(\\theta)\\vec{z}_1", "+\\cos(\\beta)\\vec{x}_2"], correct: ["+\\cos(\\beta)\\cos(\\theta)\\vec{x}_1 - \\cos(\\beta)\\sin(\\theta)\\vec{z}_1", "+\\cos(\\beta)\\vec{x}_2"], description: "Niveau D (4/4) : Produit complexe (Fig 1 / Fig 3)" }
-        ]
+        ],
+		
+    "E": [
+        {
+            "type": "qcm",
+            "enonce": "{\\vec{\\boldsymbol{x}}}_{0}\\wedge {\\vec{\\boldsymbol{y}}}_{3}",
+            "propositions": [
+                "-\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\theta }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\beta }\\right)}{\\vec{\\boldsymbol{y}}}_{0}+\\left(\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\beta }\\right)}+\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\theta }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\beta }\\right)}\\right){\\vec{\\boldsymbol{z}}}_{0}",
+                "-\\left(\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\beta }\\right)}+\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\theta }\\right)}\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\beta }\\right)}\\right){\\vec{\\boldsymbol{x}}}_{3}+\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\theta }\\right)}{\\vec{\\boldsymbol{z}}}_{3}",
+                "-\\sin{\\left(\\boldsymbol{\\theta }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\beta }\\right)}{\\vec{\\boldsymbol{y}}}_{0}-\\left(\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\beta }\\right)}+\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\theta }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\beta }\\right)}\\right){\\vec{\\boldsymbol{z}}}_{0}",
+                "+\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\theta }\\right)}\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\beta }\\right)}{\\vec{\\boldsymbol{y}}}_{0}+\\left(\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\beta }\\right)}-\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\theta }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\beta }\\right)}\\right){\\vec{\\boldsymbol{z}}}_{0}",
+                "\\left(+\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\alpha }\\right)}\\cos{\\left(\\boldsymbol{\\beta }\\right)}-\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\theta }\\right)}\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\beta }\\right)}\\right){\\vec{\\boldsymbol{x}}}_{3}-\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\theta }\\right)}{\\vec{\\boldsymbol{z}}}_{3}"
+            ],
+            "correct": [
+                "-\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\theta }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\beta }\\right)}{\\vec{\\boldsymbol{y}}}_{0}+\\left(\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\beta }\\right)}+\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\theta }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\beta }\\right)}\\right){\\vec{\\boldsymbol{z}}}_{0}",
+                "-\\left(\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\beta }\\right)}+\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\theta }\\right)}\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\beta }\\right)}\\right){\\vec{\\boldsymbol{x}}}_{3}+\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\theta }\\right)}{\\vec{\\boldsymbol{z}}}_{3}"
+            ],
+            "description": "Niveau E (3 figures) : Fig 0 vers Fig 3"
+        },
+        {
+            "type": "qcm",
+            "enonce": "{\\vec{\\boldsymbol{y}}}_{3}\\wedge {\\vec{\\boldsymbol{x}}}_{0}",
+            "propositions": [
+                "+\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\theta }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\beta }\\right)}{\\vec{\\boldsymbol{y}}}_{0}-\\left(\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\beta }\\right)}+\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\theta }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\beta }\\right)}\\right){\\vec{\\boldsymbol{z}}}_{0}",
+                "\\left(+\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\beta }\\right)}+\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\theta }\\right)}\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\beta }\\right)}\\right){\\vec{\\boldsymbol{x}}}_{3}-\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\theta }\\right)}{\\vec{\\boldsymbol{z}}}_{3}",
+                "-\\sin{\\left(\\boldsymbol{\\theta }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\beta }\\right)}{\\vec{\\boldsymbol{y}}}_{0}+\\left(\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\beta }\\right)}+\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\theta }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\beta }\\right)}\\right){\\vec{\\boldsymbol{z}}}_{0}",
+                "-\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\theta }\\right)}\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\beta }\\right)}{\\vec{\\boldsymbol{y}}}_{0}-\\left(\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\beta }\\right)}+\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\theta }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\beta }\\right)}\\right){\\vec{\\boldsymbol{z}}}_{0}",
+                "\\left(-\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\alpha }\\right)}\\cos{\\left(\\boldsymbol{\\beta }\\right)}-\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\theta }\\right)}\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\beta }\\right)}\\right){\\vec{\\boldsymbol{x}}}_{3}+\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\theta }\\right)}{\\vec{\\boldsymbol{z}}}_{3}"
+            ],
+            "correct": [
+                "+\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\theta }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\beta }\\right)}{\\vec{\\boldsymbol{y}}}_{0}-\\left(\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\beta }\\right)}+\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\theta }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\beta }\\right)}\\right){\\vec{\\boldsymbol{z}}}_{0}",
+                "\\left(+\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\beta }\\right)}+\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\theta }\\right)}\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\beta }\\right)}\\right){\\vec{\\boldsymbol{x}}}_{3}-\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\theta }\\right)}{\\vec{\\boldsymbol{z}}}_{3}"
+            ],
+            "description": "Niveau E (3 figures) : Fig 3 vers Fig 0"
+        },
+        {
+            "type": "qcm",
+            "enonce": "{\\vec{\\boldsymbol{x}}}_{0}\\wedge {\\vec{\\boldsymbol{z}}}_{3}",
+            "propositions": [
+                "-\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\beta }\\right)}\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\theta }\\right)}{\\vec{\\boldsymbol{y}}}_{0}+\\left(\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\theta }\\right)}\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\beta }\\right)}-\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\beta }\\right)}\\right){\\vec{\\boldsymbol{z}}}_{0}",
+                "+\\left(\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\theta }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\beta }\\right)}-\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\beta }\\right)}\\right){\\vec{\\boldsymbol{x}}}_{3}-\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\theta }\\right)}{\\vec{\\boldsymbol{y}}}_{3}",
+                "+\\sin{\\left(\\boldsymbol{\\beta }\\right)}\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\theta }\\right)}{\\vec{\\boldsymbol{y}}}_{0}+\\left(\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\theta }\\right)}\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\beta }\\right)}+\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\beta }\\right)}\\right){\\vec{\\boldsymbol{z}}}_{0}",
+                "-\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\beta }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\theta }\\right)}{\\vec{\\boldsymbol{y}}}_{0}-\\left(\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\beta }\\right)}+\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\theta }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\beta }\\right)}\\right){\\vec{\\boldsymbol{z}}}_{0}",
+                "+\\left(\\cos{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\theta }\\right)}\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\beta }\\right)}+\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\beta }\\right)}\\right){\\vec{\\boldsymbol{x}}}_{3}+\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\theta }\\right)}{\\vec{\\boldsymbol{y}}}_{3}"
+            ],
+            "correct": [
+                "-\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\beta }\\right)}\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\theta }\\right)}{\\vec{\\boldsymbol{y}}}_{0}+\\left(\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\theta }\\right)}\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\beta }\\right)}-\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\beta }\\right)}\\right){\\vec{\\boldsymbol{z}}}_{0}",
+                "+\\left(\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\theta }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\beta }\\right)}-\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\beta }\\right)}\\right){\\vec{\\boldsymbol{x}}}_{3}-\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\theta }\\right)}{\\vec{\\boldsymbol{y}}}_{3}"
+            ],
+            "description": "Niveau E (3 figures) : Fig 0 vers Fig 3"
+        },
+        {
+            "type": "qcm",
+            "enonce": "{\\vec{\\boldsymbol{z}}}_{3}\\wedge {\\vec{\\boldsymbol{x}}}_{0}",
+            "propositions": [
+                "+\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\beta }\\right)}\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\theta }\\right)}{\\vec{\\boldsymbol{y}}}_{0}+\\left(\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\beta }\\right)}-\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\theta }\\right)}\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\beta }\\right)}\\right){\\vec{\\boldsymbol{z}}}_{0}",
+                "+\\left(\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\beta }\\right)}-\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\theta }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\beta }\\right)}\\right){\\vec{\\boldsymbol{x}}}_{3}+\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\theta }\\right)}{\\vec{\\boldsymbol{y}}}_{3}",
+                "-\\sin{\\left(\\boldsymbol{\\beta }\\right)}\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\theta }\\right)}{\\vec{\\boldsymbol{y}}}_{0}-\\left(\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\beta }\\right)}-\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\theta }\\right)}\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\beta }\\right)}\\right){\\vec{\\boldsymbol{z}}}_{0}",
+                "+\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\beta }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\theta }\\right)}{\\vec{\\boldsymbol{y}}}_{0}+\\left(\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\beta }\\right)}+\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\theta }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\beta }\\right)}\\right){\\vec{\\boldsymbol{z}}}_{0}",
+                "-\\left(\\cos{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\beta }\\right)}-\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\theta }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\beta }\\right)}\\right){\\vec{\\boldsymbol{x}}}_{3}-\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\theta }\\right)}{\\vec{\\boldsymbol{y}}}_{3}"
+            ],
+            "correct": [
+                "+\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\beta }\\right)}\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\theta }\\right)}{\\vec{\\boldsymbol{y}}}_{0}+\\left(\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\beta }\\right)}-\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\theta }\\right)}\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\beta }\\right)}\\right){\\vec{\\boldsymbol{z}}}_{0}",
+                "+\\left(\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\beta }\\right)}-\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\theta }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\beta }\\right)}\\right){\\vec{\\boldsymbol{x}}}_{3}+\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\theta }\\right)}{\\vec{\\boldsymbol{y}}}_{3}"
+            ],
+            "description": "Niveau E (3 figures) : Fig 3 vers Fig 0"
+        },
+        {
+            "type": "qcm",
+            "enonce": "{\\vec{\\boldsymbol{y}}}_{0}\\wedge {\\vec{\\boldsymbol{y}}}_{3}",
+            "propositions": [
+                "+\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\beta }\\right)}\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\theta }\\right)}{\\vec{\\boldsymbol{x}}}_{0}+\\left(\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\beta }\\right)}-\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\theta }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\beta }\\right)}\\right){\\vec{\\boldsymbol{z}}}_{0}",
+                "+\\left(\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\beta }\\right)}-\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\theta }\\right)}\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\beta }\\right)}\\right){\\vec{\\boldsymbol{x}}}_{3}+\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\theta }\\right)}{\\vec{\\boldsymbol{z}}}_{3}",
+                "-\\cos{\\left(\\boldsymbol{\\beta }\\right)}\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\theta }\\right)}{\\vec{\\boldsymbol{x}}}_{0}+\\left(\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\beta }\\right)}+\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\theta }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\beta }\\right)}\\right){\\vec{\\boldsymbol{z}}}_{0}",
+                "+\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\beta }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\theta }\\right)}{\\vec{\\boldsymbol{x}}}_{0}-\\left(\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\beta }\\right)}-\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\theta }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\beta }\\right)}\\right){\\vec{\\boldsymbol{z}}}_{0}",
+                "-\\left(\\sin{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\beta }\\right)}+\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\theta }\\right)}\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\beta }\\right)}\\right){\\vec{\\boldsymbol{x}}}_{3}-\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\theta }\\right)}{\\vec{\\boldsymbol{z}}}_{3}"
+            ],
+            "correct": [
+                "+\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\beta }\\right)}\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\theta }\\right)}{\\vec{\\boldsymbol{x}}}_{0}+\\left(\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\beta }\\right)}-\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\theta }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\beta }\\right)}\\right){\\vec{\\boldsymbol{z}}}_{0}",
+                "+\\left(\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\beta }\\right)}-\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\theta }\\right)}\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\beta }\\right)}\\right){\\vec{\\boldsymbol{x}}}_{3}+\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\theta }\\right)}{\\vec{\\boldsymbol{z}}}_{3}"
+            ],
+            "description": "Niveau E (3 figures) : Fig 0 vers Fig 3"
+        },
+        {
+            "type": "qcm",
+            "enonce": "{\\vec{\\boldsymbol{y}}}_{3}\\wedge {\\vec{\\boldsymbol{y}}}_{0}",
+            "propositions": [
+                "-\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\beta }\\right)}\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\theta }\\right)}{\\vec{\\boldsymbol{x}}}_{0}+\\left(\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\theta }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\beta }\\right)}-\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\beta }\\right)}\\right){\\vec{\\boldsymbol{z}}}_{0}",
+                "+\\left(\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\theta }\\right)}\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\beta }\\right)}-\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\beta }\\right)}\\right){\\vec{\\boldsymbol{x}}}_{3}-\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\theta }\\right)}{\\vec{\\boldsymbol{z}}}_{3}",
+                "+\\cos{\\left(\\boldsymbol{\\beta }\\right)}\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\theta }\\right)}{\\vec{\\boldsymbol{x}}}_{0}-\\left(\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\theta }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\beta }\\right)}-\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\beta }\\right)}\\right){\\vec{\\boldsymbol{z}}}_{0}",
+                "-\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\beta }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\theta }\\right)}{\\vec{\\boldsymbol{x}}}_{0}-\\left(\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\beta }\\right)}+\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\theta }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\beta }\\right)}\\right){\\vec{\\boldsymbol{z}}}_{0}",
+                "-\\left(\\cos{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\theta }\\right)}-\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\beta }\\right)}\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\beta }\\right)}\\right){\\vec{\\boldsymbol{x}}}_{3}+\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\theta }\\right)}{\\vec{\\boldsymbol{z}}}_{3}"
+            ],
+            "correct": [
+                "-\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\beta }\\right)}\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\theta }\\right)}{\\vec{\\boldsymbol{x}}}_{0}+\\left(\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\theta }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\beta }\\right)}-\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\beta }\\right)}\\right){\\vec{\\boldsymbol{z}}}_{0}",
+                "+\\left(\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\theta }\\right)}\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\beta }\\right)}-\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\beta }\\right)}\\right){\\vec{\\boldsymbol{x}}}_{3}-\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\theta }\\right)}{\\vec{\\boldsymbol{z}}}_{3}"
+            ],
+            "description": "Niveau E (3 figures) : Fig 3 vers Fig 0"
+        },
+        {
+            "type": "qcm",
+            "enonce": "{\\vec{\\boldsymbol{y}}}_{0}\\wedge {\\vec{\\boldsymbol{z}}}_{3}",
+            "propositions": [
+                "+\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\beta }\\right)}\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\theta }\\right)}{\\vec{\\boldsymbol{x}}}_{0}-\\left(\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\beta }\\right)}+\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\theta }\\right)}\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\beta }\\right)}\\right){\\vec{\\boldsymbol{z}}}_{0}",
+                "+\\left(\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\beta }\\right)}+\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\theta }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\beta }\\right)}\\right){\\vec{\\boldsymbol{x}}}_{3}-\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\theta }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\alpha }\\right)}{\\vec{\\boldsymbol{y}}}_{3}",
+                "-\\sin{\\left(\\boldsymbol{\\beta }\\right)}\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\theta }\\right)}{\\vec{\\boldsymbol{x}}}_{0}+\\left(\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\beta }\\right)}+\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\theta }\\right)}\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\beta }\\right)}\\right){\\vec{\\boldsymbol{z}}}_{0}",
+                "+\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\beta }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\theta }\\right)}{\\vec{\\boldsymbol{x}}}_{0}-\\left(\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\beta }\\right)}-\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\theta }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\beta }\\right)}\\right){\\vec{\\boldsymbol{z}}}_{0}",
+                "-\\left(\\sin{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\beta }\\right)}+\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\theta }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\beta }\\right)}\\right){\\vec{\\boldsymbol{x}}}_{3}+\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\theta }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\alpha }\\right)}{\\vec{\\boldsymbol{y}}}_{3}"
+            ],
+            "correct": [
+                "+\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\beta }\\right)}\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\theta }\\right)}{\\vec{\\boldsymbol{x}}}_{0}-\\left(\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\beta }\\right)}+\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\theta }\\right)}\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\beta }\\right)}\\right){\\vec{\\boldsymbol{z}}}_{0}",
+                "+\\left(\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\beta }\\right)}+\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\theta }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\beta }\\right)}\\right){\\vec{\\boldsymbol{x}}}_{3}-\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\theta }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\alpha }\\right)}{\\vec{\\boldsymbol{y}}}_{3}"
+            ],
+            "description": "Niveau E (3 figures) : Fig 0 vers Fig 3"
+        },
+        {
+            "type": "qcm",
+            "enonce": "{\\vec{\\boldsymbol{z}}}_{3}\\wedge {\\vec{\\boldsymbol{y}}}_{0}",
+            "propositions": [
+                "-\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\beta }\\right)}\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\theta }\\right)}{\\vec{\\boldsymbol{x}}}_{0}+\\left(\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\beta }\\right)}+\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\theta }\\right)}\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\beta }\\right)}\\right){\\vec{\\boldsymbol{z}}}_{0}",
+                "-\\left(\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\beta }\\right)}+\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\theta }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\beta }\\right)}\\right){\\vec{\\boldsymbol{x}}}_{3}+\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\theta }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\alpha }\\right)}{\\vec{\\boldsymbol{y}}}_{3}",
+                "+\\sin{\\left(\\boldsymbol{\\beta }\\right)}\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\theta }\\right)}{\\vec{\\boldsymbol{x}}}_{0}-\\left(\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\beta }\\right)}+\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\theta }\\right)}\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\beta }\\right)}\\right){\\vec{\\boldsymbol{z}}}_{0}",
+                "-\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\beta }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\theta }\\right)}{\\vec{\\boldsymbol{x}}}_{0}+\\left(\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\beta }\\right)}-\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\theta }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\beta }\\right)}\\right){\\vec{\\boldsymbol{z}}}_{0}",
+                "+\\left(\\sin{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\beta }\\right)}+\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\theta }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\beta }\\right)}\\right){\\vec{\\boldsymbol{x}}}_{3}-\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\theta }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\alpha }\\right)}{\\vec{\\boldsymbol{y}}}_{3}"
+            ],
+            "correct": [
+                "-\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\beta }\\right)}\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\theta }\\right)}{\\vec{\\boldsymbol{x}}}_{0}+\\left(\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\beta }\\right)}+\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\theta }\\right)}\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\beta }\\right)}\\right){\\vec{\\boldsymbol{z}}}_{0}",
+                "-\\left(\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\beta }\\right)}+\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\alpha }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\theta }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\beta }\\right)}\\right){\\vec{\\boldsymbol{x}}}_{3}+\\operatorname{\\boldsymbol{cos}}{\\left(\\boldsymbol{\\theta }\\right)}\\operatorname{\\boldsymbol{sin}}{\\left(\\boldsymbol{\\alpha }\\right)}{\\vec{\\boldsymbol{y}}}_{3}"
+            ],
+            "description": "Niveau E (3 figures) : Fig 3 vers Fig 0"
+        }
+    ]
+
     };
 
     window.onload = function() {
