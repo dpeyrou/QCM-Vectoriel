@@ -204,26 +204,29 @@
     const BANQUE_QUESTIONS = {
         "A": [
             { type: "colonnes", enonce: "\\vec{x}_0 \\wedge \\vec{x}_1", solution: {signe: "+", trigo: "sin", angle: "α", vecteur: "z", indice: "0"}, description: "Niveau A (1/4) : Base 0 et 1" },
-            { type: "colonnes", enonce: "\\vec{x}_1 \\wedge \\vec{x}_0", solution: {signe: "-", trigo: "sin", angle: "α", vecteur: "z", indice: "0"}, description: "Niveau A (1/4) : Base 0 et 1" },
+            { type: "colonnes", enonce: "\\vec{x}_1 \\wedge \\vec{x}_0", solution: {signe: "-", trigo: "sin", angle: "α", vecteur: "z", indice: "0"}, description: "Niveau A (1/4) : Base 1 et 0" },
             { type: "colonnes", enonce: "\\vec{y}_0 \\wedge \\vec{y}_1", solution: {signe: "+", trigo: "sin", angle: "α", vecteur: "z", indice: "0"}, description: "Niveau A (1/4) : Base 0 et 1" },
-            { type: "colonnes", enonce: "\\vec{y}_1 \\wedge \\vec{y}_0", solution: {signe: "-", trigo: "sin", angle: "α", vecteur: "z", indice: "0"}, description: "Niveau A (1/4) : Base 0 et 1" },
-            { type: "colonnes", enonce: "\\vec{x}_1 \\wedge \\vec{z}_0", solution: {signe: "-", trigo: "1", angle: "θ", vecteur: "y", indice: "1"}, description: "Niveau A (1/4) : Base 1 et 2" },
+            { type: "colonnes", enonce: "\\vec{y}_1 \\wedge \\vec{y}_0", solution: {signe: "-", trigo: "sin", angle: "α", vecteur: "z", indice: "0"}, description: "Niveau A (1/4) : Base 1 et 0" },
+            { type: "colonnes", enonce: "\\vec{x}_1 \\wedge \\vec{z}_0", solution: {signe: "-", trigo: "1", angle: "θ", vecteur: "y", indice: "1"}, description: "Niveau A (1/4) : Base 1 et 0" },
+			{ type: "colonnes", enonce: "\\vec{z}_0 \\wedge \\vec{x}_1", solution: {signe: "+", trigo: "1", angle: "θ", vecteur: "y", indice: "1"}, description: "Niveau A (1/4) : Base 0 et 1" },
             { type: "colonnes", enonce: "\\vec{z}_1 \\wedge \\vec{z}_2", solution: {signe: "+", trigo: "sin", angle: "θ", vecteur: "y", indice: "1"}, description: "Niveau A (1/4) : Base 1 et 2" },
             { type: "colonnes", enonce: "\\vec{z}_2 \\wedge \\vec{z}_1", solution: {signe: "-", trigo: "sin", angle: "θ", vecteur: "y", indice: "1"}, description: "Niveau A (1/4) : Base 1 et 2" },
             { type: "colonnes", enonce: "\\vec{x}_1 \\wedge \\vec{x}_2", solution: {signe: "+", trigo: "sin", angle: "θ", vecteur: "y", indice: "1"}, description: "Niveau A (1/4) : Base 1 et 2" },
             { type: "colonnes", enonce: "\\vec{x}_2 \\wedge \\vec{x}_1", solution: {signe: "-", trigo: "sin", angle: "θ", vecteur: "y", indice: "1"}, description: "Niveau A (1/4) : Base 1 et 2" },
             { type: "colonnes", enonce: "\\vec{y}_1 \\wedge \\vec{x}_2", solution: {signe: "-", trigo: "1", angle: "θ", vecteur: "z", indice: "2"}, description: "Niveau A (1/4) : Base 1 et 2" },
+			{ type: "colonnes", enonce: "\\vec{x}_2 \\wedge \\vec{y}_1", solution: {signe: "+", trigo: "1", angle: "θ", vecteur: "z", indice: "2"}, description: "Niveau A (1/4) : Base 1 et 2" },
             { type: "colonnes", enonce: "\\vec{y}_2 \\wedge \\vec{y}_3", solution: {signe: "+", trigo: "sin", angle: "β", vecteur: "x", indice: "2"}, description: "Niveau A (1/4) : Base 2 et 3" },
             { type: "colonnes", enonce: "\\vec{y}_3 \\wedge \\vec{y}_2", solution: {signe: "-", trigo: "sin", angle: "β", vecteur: "x", indice: "2"}, description: "Niveau A (1/4) : Base 2 et 3" },
             { type: "colonnes", enonce: "\\vec{z}_2 \\wedge \\vec{z}_3", solution: {signe: "+", trigo: "sin", angle: "β", vecteur: "x", indice: "2"}, description: "Niveau A (1/4) : Base 2 et 3" },
             { type: "colonnes", enonce: "\\vec{z}_3 \\wedge \\vec{z}_2", solution: {signe: "-", trigo: "sin", angle: "β", vecteur: "x", indice: "2"}, description: "Niveau A (1/4) : Base 2 et 3" },
-            { type: "colonnes", enonce: "\\vec{y}_3 \\wedge \\vec{x}_2", solution: {signe: "-", trigo: "1", angle: "β", vecteur: "z", indice: "3"}, description: "Niveau A (1/4) : Base 2 et 3" }
+            { type: "colonnes", enonce: "\\vec{y}_3 \\wedge \\vec{x}_2", solution: {signe: "-", trigo: "1", angle: "β", vecteur: "z", indice: "3"}, description: "Niveau A (1/4) : Base 2 et 3" },
+			{ type: "colonnes", enonce: "\\vec{x}_2 \\wedge \\vec{y}_3", solution: {signe: "+", trigo: "1", angle: "β", vecteur: "z", indice: "3"}, description: "Niveau A (1/4) : Base 2 et 3" }
         ],
         "B": [
             { type: "colonnes", enonce: "\\vec{x}_1 \\wedge \\vec{y}_0", solution: {signe: "+", trigo: "cos", angle: "α", vecteur: "z", indice: "0"}, description: "Niveau B (2/4) : Figure 0 et 1" },
             { type: "colonnes", enonce: "\\vec{x}_0 \\wedge \\vec{y}_1", solution: {signe: "+", trigo: "cos", angle: "α", vecteur: "z", indice: "0"}, description: "Niveau B (2/4) : Figure 0 et 1" },
             { type: "colonnes", enonce: "\\vec{y}_0 \\wedge \\vec{x}_1", solution: {signe: "-", trigo: "cos", angle: "α", vecteur: "z", indice: "0"}, description: "Niveau B (2/4) : Figure 0 et 1" },
-            { type: "colonnes", enonce: "\\vec{y}_1 \\wedge \\vec{x}_0", solution: {signe: "+", trigo: "cos", angle: "α", vecteur: "z", indice: "0"}, description: "Niveau B (2/4) : Figure 0 et 1" },
+            { type: "colonnes", enonce: "\\vec{y}_1 \\wedge \\vec{x}_0", solution: {signe: "-", trigo: "cos", angle: "α", vecteur: "z", indice: "0"}, description: "Niveau B (2/4) : Figure 0 et 1" },
             { type: "colonnes", enonce: "\\vec{z}_2 \\wedge \\vec{x}_1", solution: {signe: "+", trigo: "cos", angle: "θ", vecteur: "y", indice: "1"}, description: "Niveau B (2/4) : Base 2 et 1" },
             { type: "colonnes", enonce: "\\vec{z}_1 \\wedge \\vec{x}_2", solution: {signe: "+", trigo: "cos", angle: "θ", vecteur: "y", indice: "1"}, description: "Niveau B (2/4) : Base 1 et 2" },
             { type: "colonnes", enonce: "\\vec{x}_1 \\wedge \\vec{z}_2", solution: {signe: "-", trigo: "cos", angle: "θ", vecteur: "y", indice: "1"}, description: "Niveau B (2/4) : Base 1 et 2" },
@@ -235,6 +238,7 @@
         ],
         "C": [
             { type: "qcm", enonce: "\\vec{y}_3 \\wedge \\vec{z}_1", propositions: ["+\\cos(\\beta)\\vec{x}_1 - \\sin(\\beta)\\sin(\\theta)\\vec{y}_1", "+\\cos(\\beta)\\vec{x}_1 + \\sin(\\beta)\\cos(\\theta)\\vec{y}_1", "-\\cos(\\beta)\\vec{x}_1 - \\sin(\\beta)\\sin(\\theta)\\vec{y}_1", "+\\sin(\\beta)\\vec{x}_1"], correct: ["+\\cos(\\beta)\\vec{x}_1 - \\sin(\\beta)\\sin(\\theta)\\vec{y}_1"], description: "Niveau C (3/4) : Fig 3 vers Fig 1" },
+			
             { type: "qcm", enonce: "\\vec{z}_3 \\wedge \\vec{z}_1", propositions: ["+\\sin(\\beta)\\vec{x}_1 - \\sin(\\beta)\\sin(\\theta)\\vec{y}_1", "-\\sin(\\beta)\\vec{x}_1 - \\sin(\\theta)\\cos(\\beta)\\vec{y}_1", "-\\cos(\\beta)\\vec{x}_1 - \\sin(\\beta)\\sin(\\theta)\\vec{y}_1", "+\\sin(\\beta)\\vec{x}_1"], correct: ["-\\sin(\\beta)\\vec{x}_1 - \\sin(\\theta)\\cos(\\beta)\\vec{y}_1"], description: "Niveau C (3/4) : Fig 3 vers Fig 1" },
             { type: "qcm", enonce: "\\vec{z}_1 \\wedge \\vec{y}_3", propositions: ["-\\cos(\\beta)\\vec{x}_1 + \\sin(\\beta)\\sin(\\theta)\\vec{y}_1", "-\\cos(\\beta)\\vec{x}_1 - \\sin(\\beta)\\cos(\\theta)\\vec{y}_1", "+\\cos(\\beta)\\vec{x}_1 + \\sin(\\beta)\\sin(\\theta)\\vec{y}_1", "-\\sin(\\beta)\\vec{x}_1"], correct: ["-\\cos(\\beta)\\vec{x}_1 + \\sin(\\beta)\\sin(\\theta)\\vec{y}_1"], description: "Niveau C (3/4) : Fig 1 vers Fig 3" },
             { type: "qcm", enonce: "\\vec{z}_1 \\wedge \\vec{z}_3", propositions: ["-\\sin(\\beta)\\vec{x}_1 + \\sin(\\beta)\\sin(\\theta)\\vec{y}_1", "+\\sin(\\beta)\\vec{x}_1 + \\sin(\\theta)\\cos(\\beta)\\vec{y}_1", "+\\cos(\\beta)\\vec{x}_1 + \\sin(\\beta)\\sin(\\theta)\\vec{y}_1", "-\\sin(\\beta)\\vec{x}_1"], correct: ["+\\sin(\\beta)\\vec{x}_1 + \\sin(\\theta)\\cos(\\beta)\\vec{y}_1"], description: "Niveau C (3/4) : Fig 1 vers Fig 3" },
